@@ -1,0 +1,7 @@
+<p>employees works!</p>
+<div *ngIf="employees$ | async as employees">
+    <li *ngFor="let employee of employees" class="item-container">
+      {{employee.id}} {{employee.employee_name}}
+    </li>
+  </div>
+  

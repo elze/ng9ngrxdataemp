@@ -1,0 +1,7 @@
+<p>todos works!</p>
+<div *ngIf="todos$ | async as todos">
+    <li *ngFor="let todo of todos" class="item-container">
+      {{todo.id}} {{todo.title}}
+    </li>
+</div>  
+
